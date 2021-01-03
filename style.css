@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+body{
+    font-family: 'Yellowtail', cursive;
+    margin:0;
+    color:var(--text-color); 
+
+}
+
+:root{
+    --primary-color:#FBBF24;
+    --text-color:#333333;  
+    --width-break: 600px;
+}
+
+
+.header{    
+    background-color : var(--primary-color);    
+}
+
+#btn-translate{
+    border:none;
+    padding: 1rem 2rem;
+    margin: 1rem 0rem;
+    background-color:var(--primary-color);
+    font:inherit;
+    font-size:large;
+}
+
+.main{
+    box-sizing:border-box;
+    max-width:var(--width-break);
+    margin:auto;
+
+}

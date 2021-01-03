@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banana talk</title>
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        #txtInput {
+            box-sizing: border-box;
+            display:block;
+            min-height: 20vh;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 2rem;
+            font: inherit;
+            font-size:large;
+
+
+
+        }
+
+        #output {
+            box-sizing: border-box;
+            border: 1px solid var(--text-color);
+            min-height: 10vh;
+            max-height:20vh;
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem;
+            overflow:scroll;
+
+        }
+    </style>
 </head>
+
 <body>
-    <p>This is initial commit, just to see everything is working fine.</p>
+    <header style="text-align: center;">
+        <div style="font-size: 2rem; padding: 1rem;" class="header">banana talk</div>
+    </header>
+    <div class="main">
+        <h1>Enter your message: </h1>
+        <textarea id="txtInput"
+            placeholder="Put your message here which you want to convert to banana language"></textarea>
+        <div>
+            <button id="btn-translate">Translate to banana</button>
+        </div>
+        <div style="font-size: larger;">Translation will come here 👇</div>
+        <div id="output"></div>
+    </div>
+
+
+
+
 </body>
+<script src="app.js" type="text/javascript"></script>
+
 </html>
