@@ -53,6 +53,5 @@ footer{
 }
 
 footer p{
-    max-width: var(--width-break);
-    margin:auto;
+    max-width: var(--width-break);    
 }
